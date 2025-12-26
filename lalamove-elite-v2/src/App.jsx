@@ -1,3 +1,8 @@
+import React, { useState, useEffect } from 'react';
+// Pastikan baris di bawah ini ada!
+import { initializeApp } from "firebase/app";
+import { getAuth, signInAnonymously, onAuthStateChanged } from "firebase/auth";
+import { getFirestore, collection, addDoc, query, onSnapshot, doc, deleteDoc, updateDoc } from "firebase/firestore";
 import { 
   Plus, Trash2, Wallet, Target, TrendingUp, Calendar, 
   Truck, Wrench, Settings, Edit2, Check, 
